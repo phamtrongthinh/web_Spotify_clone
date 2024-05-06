@@ -1,0 +1,308 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{62737B48-BEBE-46B9-A45F-77A92B18AF6B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Spotify</RootNamespace>
+    <AssemblyName>Spotify</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44344</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\Music.css" />
+    <Content Include="CSS\Profile.css" />
+    <Content Include="CSS\Responsive.css" />
+    <Content Include="CSS\Signup.css" />
+    <Content Include="CSS\StyleSheet1.css" />
+    <Content Include="CSS\TimKiem.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\22.jfif" />
+    <Content Include="Images\99percent.jfif" />
+    <Content Include="Images\ai.jfif" />
+    <Content Include="Images\aiCungPhai.jfif" />
+    <Content Include="Images\chayNgayDi.jfif" />
+    <Content Include="Images\chungTaCuaHienTai.jfif" />
+    <Content Include="Images\chungTaCuaTuongLai.jfif" />
+    <Content Include="Images\chungTaKhongThuocVeNhau.jfif" />
+    <Content Include="Images\coChacYeuLaDay.jfif" />
+    <Content Include="Images\dep.jfif" />
+    <Content Include="Images\hayTraoChoAnh.jfif" />
+    <Content Include="Images\HIEUTHUHAI.jfif" />
+    <Content Include="Images\lacTroi.jfif" />
+    <Content Include="Images\liked-songs-640.png" />
+    <Content Include="Images\Logo.png" />
+    <Content Include="Images\loiChoi.jfif" />
+    <Content Include="Images\MAKINGMYWAY.jfif" />
+    <Content Include="Images\mono.jfif" />
+    <Content Include="Images\muonRoiMaSaoCon.jfif" />
+    <Content Include="Images\noiNayCoAnh.jfif" />
+    <Content Include="Images\playlist.png" />
+    <Content Include="Images\Radio0.jfif" />
+    <Content Include="Images\Radio1.jfif" />
+    <Content Include="Images\Radio2.jfif" />
+    <Content Include="Images\Radio3.jfif" />
+    <Content Include="Images\Radio4.jfif" />
+    <Content Include="Images\Radio5.jfif" />
+    <Content Include="Images\rptMck.jfif" />
+    <Content Include="Images\sonTung.jfif" />
+    <Content Include="Images\THERE%27SNOONEATALL.jfif" />
+    <Content Include="Images\tlinh.jfif" />
+    <Content Include="Images\wrenEvans.jfif" />
+    <Content Include="JavaScript\DataLocal.js" />
+    <Content Include="JavaScript\Liked.js" />
+    <Content Include="JavaScript\Login.js" />
+    <Content Include="JavaScript\Music2.js" />
+    <Content Include="JavaScript\Profile.js" />
+    <Content Include="JavaScript\Sharing.js" />
+    <Content Include="JavaScript\Signup.js" />
+    <Content Include="JavaScript\TimKiem.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Music.aspx" />
+    <Content Include="Musics\00.mp3" />
+    <Content Include="Musics\03. Suit &amp; Tie - RPT MCK %28 ft. Hoàng Tôn %29 - - 99_ - the album.mp3" />
+    <Content Include="Musics\04. Va Vào Giai Điệu Này - RPT MCK - -99_- the album.mp3" />
+    <Content Include="Musics\06. Chỉ Một Đêm Nữa Thôi - RPT MCK %28 ft. tlinh %29 - - 99_ - the album.mp3" />
+    <Content Include="Musics\07. Thôi Em Đừng Đi - RPT MCK %28 ft. Trung Trần %29 - - 99_ - the album.mp3" />
+    <Content Include="Musics\09. Cuốn Cho Anh Một Điếu Nữa Đi - RPT MCK - - 99_ - the album.mp3" />
+    <Content Include="Musics\10. Show Me Love - RPT MCK - - 99_ - the album.mp3" />
+    <Content Include="Musics\14. Anh Đã Ổn Hơn - RPT MCK - -99_- the album.mp3" />
+    <Content Include="Musics\15. Badtrip - RPT MCK - -99_- the album.mp3" />
+    <Content Include="Musics\16. 99 - RPT MCK - -99_- the album.mp3" />
+    <Content Include="Musics\50-50.mp3" />
+    <Content Include="Musics\Chìm Sâu - RPT MCK %28feat. Trung Trần%29 - Official Lyrics Video.mp3" />
+    <Content Include="Musics\Chúng Ta Của Hiện Tại.mp3" />
+    <Content Include="Musics\Chúng Ta Không Thuộc Về Nhau - Official Music Video - Sơn Tùng M-TP.mp3" />
+    <Content Include="Musics\CHẠY NGAY ĐI - RUN NOW - SƠN TÙNG M-TP - Official Music Video.mp3" />
+    <Content Include="Musics\HIEUTHUHAI - Ai Cũng Phải Bắt Đầu Từ Đâu Đó %28prod. by Kewtiie%29 [Official Lyric Video].mp3" />
+    <Content Include="Musics\HIEUTHUHAI - Cho Em An Toàn %28prod. by Kewtiie%29 [Official Lyric Video].mp3" />
+    <Content Include="Musics\HIEUTHUHAI - Everything Will Be Okay %28prod. by Kewtiie%29 [Official Lyric Video].mp3" />
+    <Content Include="Musics\HIEUTHUHAI - Exit Sign %28prod. by Kewtiie%29 ft. marzuz [Official Lyric Video].mp3" />
+    <Content Include="Musics\HIEUTHUHAI - Giờ Thì Ai Cười %28prod. by Kewtiie%29 [Official Lyric Video].mp3" />
+    <Content Include="Musics\HIEUTHUHAI - Không Phải Gu %28prod. by Kewtiie%29 ft. B Ray &amp; Tage [Official Lyric Video].mp3" />
+    <Content Include="Musics\HIEUTHUHAI - Không Thể Say %28prod. by Kewtiie%29 [Official Lyric Video].mp3" />
+    <Content Include="Musics\HIEUTHUHAI - KPI %28prod. by Kewtiie%29 [Official Lyric Video].mp3" />
+    <Content Include="Musics\HIEUTHUHAI - NOLOVENOLIFE %28prod. by Kewtiie%29 [Official Lyric Video].mp3" />
+    <Content Include="Musics\HIEUTHUHAI - Siêu Sao %28prod. by Kewtiie%29 [Official Lyric Video].mp3" />
+    <Content Include="Musics\HIEUTHUHAI - Sắp Nổi Tiếng %28prod. by Kewtiie%29 [Official Lyric Video].mp3" />
+    <Content Include="Musics\HIEUTHUHAI - Visa Interlude %28prod. by Kewtiie%29 [Official Audio].mp3" />
+    <Content Include="Musics\HIEUTHUHAI - Đi Họp Lớp %28prod. by Kewtiie%29 [Official Lyric Video].mp3" />
+    <Content Include="Musics\INTRO.mp3" />
+    <Content Include="Musics\Intro1.mp3" />
+    <Content Include="Musics\LẠC TRÔI - OFFICIAL MUSIC VIDEO - SƠN TÙNG M-TP.mp3" />
+    <Content Include="Musics\making-my-way-son-tung-m-tp.mp3" />
+    <Content Include="Musics\MONO - %27OPEN YOUR EYES %28Official Audio%29.mp3" />
+    <Content Include="Musics\MONO - Anh Không Thể %28Album 22 - Track No.07%29.mp3" />
+    <Content Include="Musics\MONO - Buông %28Album 22 - Track No.02%29.mp3" />
+    <Content Include="Musics\MONO - CƯỜI LÊN %28Official Audio%29.mp3" />
+    <Content Include="Musics\MONO - Em Là %28Album 22 - Track No.03%29.mp3" />
+    <Content Include="Musics\MONO - Em Xinh %28Official Music Video%29.mp3" />
+    <Content Include="Musics\MONO - Kill Me %28Album 22 - Track No.04%29.mp3" />
+    <Content Include="Musics\MONO - L.I.E %28Album 22 - Track No.11%29.mp3" />
+    <Content Include="Musics\MONO - Quên Anh Đi %28Album 22 - Track No.05%29.mp3" />
+    <Content Include="Musics\MONO - Waiting For You %28Album 22 - Track No.10%29.mp3" />
+    <Content Include="Musics\MONO - Young %28Official Music Video%29.mp3" />
+    <Content Include="Musics\MONO ft Rein - Do You %28Album 22 - Track No.08%29.mp3" />
+    <Content Include="Musics\NƠI NÀY CÓ ANH - OFFICIAL MUSIC VIDEO - SƠN TÙNG M-TP.mp3" />
+    <Content Include="Musics\RPT MCK - AI MỚI LÀ KẺ XẤU XA - OFFICIAL MUSIC VIDEO.mp3" />
+    <Content Include="Musics\RPT MCK - TẠI VÌ SAO - Official Music Video.mp3" />
+    <Content Include="Musics\SƠN TÙNG M-TP - CHÚNG TA CỦA TƯƠNG LAI - OFFICIAL MUSIC VIDEO.mp3" />
+    <Content Include="Musics\SƠN TÙNG M-TP - CÓ CHẮC YÊU LÀ ĐÂY - OFFICIAL MUSIC VIDEO.mp3" />
+    <Content Include="Musics\SƠN TÙNG M-TP - HÃY TRAO CHO ANH ft. Snoop Dogg - Official MV.mp3" />
+    <Content Include="Musics\SƠN TÙNG M-TP - MUỘN RỒI MÀ SAO CÒN - OFFICIAL MUSIC VIDEO.mp3" />
+    <Content Include="Musics\SƠN TÙNG M-TP - THERES NO ONE AT ALL %28ANOTHER VERSION%29 - OFFICIAL MUSIC VIDEO.mp3" />
+    <Content Include="Musics\Thờ Er.mp3" />
+    <Content Include="Musics\tlinh - ghệ iu dấu của em ơi - OFFICIAL VISUALIZER.mp3" />
+    <Content Include="Musics\tlinh - kho báu đánh rơi %28feat. Grey D%29 - OFFICIAL VISUALIZER.mp3" />
+    <Content Include="Musics\tlinh - kết thúc = mở đầu %28outro%29 - OFFICIAL VISUALIZER.mp3" />
+    <Content Include="Musics\tlinh - làm lành chữa tình - OFFICIAL VISUALIZER.mp3" />
+    <Content Include="Musics\tlinh - người điên - OFFICIAL VISUALIZER.mp3" />
+    <Content Include="Musics\tlinh - người đẹp ngủ - OFFICIAL VISUALIZER.mp3" />
+    <Content Include="Musics\tlinh - những đốm sáng - OFFICIAL VISUALIZER.mp3" />
+    <Content Include="Musics\tlinh - nếu lúc đó - OFFICIAL VISUALIZER.mp3" />
+    <Content Include="Musics\tlinh - nữ siêu anh hùng - OFFICIAL VISUALIZER.mp3" />
+    <Content Include="Musics\tlinh - thế giới thần tiên - OFFICIAL VISUALIZER.mp3" />
+    <Content Include="Musics\tlinh - tình yêu có nghĩa là gì- %28intro%29 - OFFICIAL VISUALIZER.mp3" />
+    <Content Include="Musics\tlinh - ái %28interlude%29 - OFFICIAL VISUALIZER.mp3" />
+    <Content Include="Musics\Tối Nay Ta Đi Đâu Nhờ.mp3" />
+    <Content Include="Musics\TỪNG QUEN - WREN EVANS X LIM FENG.mp3" />
+    <Content Include="Musics\WREN EVANS - bé ơi từ từ - LOI CHOI The First Album %28ft. itsnk%29.mp3" />
+    <Content Include="Musics\WREN EVANS - CALL ME - OFFICIAL MUSIC VIDEO.mp3" />
+    <Content Include="Musics\WREN EVANS - Cầu Vĩnh Tuy - LOI CHOI The First Album %28ft. itsnk%29.mp3" />
+    <Content Include="Musics\WREN EVANS - Lối Chơi %28Interlude%29 - LOI CHOI The First Album %28ft. itsnk%29.mp3" />
+    <Content Include="Musics\WREN EVANS - Phóng Đổ Tim Em - LOI CHOI The First Album %28ft. itsnk%29.mp3" />
+    <Content Include="Musics\WREN EVANS - Quyền Anh - LOI CHOI The First Album %28ft. itsnk%29.mp3" />
+    <Content Include="Musics\WREN EVANS - Tình Yêu Vĩ Mô - LOI CHOI The First Album %28ft. itsnk%29.mp3" />
+    <Content Include="Musics\WREN EVANS - Tò Te Tí - LOI CHOI The First Album %28ft. itsnk%29.mp3" />
+    <Content Include="Musics\WREN EVANS - VIỆT KIỀU %28ft. itsnk, starring %40oanhdaqueen%29 - OFFICIAL MUSIC VIDEO.mp3" />
+    <Content Include="Musics\WREN EVANS - ĐĐĐ - LOI CHOI The First Album %28ft. itsnk%29.mp3" />
+    <Content Include="Musics\_MONO - Cô Nương AHHHhhhh. %28Album 22 - Track No.09%29.mp3" />
+    <Content Include="Profile.aspx" />
+    <Content Include="Sharing.aspx" />
+    <Content Include="Signup.aspx" />
+    <Content Include="TimKiem.aspx" />
+    <Content Include="TrangChu.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Albums.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Music.aspx.cs">
+      <DependentUpon>Music.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Music.aspx.designer.cs">
+      <DependentUpon>Music.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="shareMusic.cs" />
+    <Compile Include="Sharing.aspx.cs">
+      <DependentUpon>Sharing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sharing.aspx.designer.cs">
+      <DependentUpon>Sharing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiem.aspx.cs">
+      <DependentUpon>TimKiem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimKiem.aspx.designer.cs">
+      <DependentUpon>TimKiem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrangChu.aspx.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrangChu.aspx.designer.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56597</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44344/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

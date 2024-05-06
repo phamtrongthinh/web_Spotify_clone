@@ -1,0 +1,50 @@
+﻿#search-box {
+    background-color: #242323;
+    border-radius: 35px;
+    padding: 5px;
+    position: relative; /*Thêm dòng này*/
+    margin-left: -450px;
+}
+
+    #search-box #search-text {
+        color: #ffffff;
+        border: 0;
+        outline: 0;
+        background-color: #242323;
+        padding: 10px 140px 10px 10px; /*Thay đổi giá trị padding*/
+        font-size: 150%;
+        border-radius: 35px;
+    }
+
+    #search-box #search-btn {
+        color: #a7a7a7;
+        font-size: 165%;
+        border: 0;
+        outline: 0;
+        background-color: #242323;
+        padding: 10px;
+        border-radius: 35px;
+        position: absolute; /*Thêm dòng này*/
+        right: 10px; /*Thêm dòng này*/
+        top: 50%; /*Thêm dòng này*/
+        transform: translateY(-50%); /*Thêm dòng này*/
+    }
+
+    #search-box:hover {
+        background-color: rgb(44, 44, 44);
+        border: 0.5px solid rgb(75, 75, 75);
+    }
+
+#search-text:focus ~ #search-box {
+    border: 1px solid rgb(161, 161, 161);
+    background-color: rgb(44, 44, 44);
+}
+
+#search-box:hover #search-text {
+    background-color: rgb(44, 44, 44);
+}
+
+#search-box:hover #search-btn {
+    color: #ffffff;
+    background-color: rgb(44, 44, 44);
+}

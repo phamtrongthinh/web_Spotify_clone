@@ -1,0 +1,181 @@
+﻿@media only screen and (max-width: 1090px) {
+    .header-sidebar {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+    }
+    .spotify a:nth-child(6) {
+        display: none;
+    }
+    .item {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .header-sidebar {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .spotify a:nth-child(5) {
+        display: none;
+    }
+}
+    @media only screen and (max-width: 700px) {
+        .header-sidebar {
+            display: none;
+        }
+
+        .main {
+            width: 100%;
+        }
+
+        .spotify a:nth-child(4) {
+            display: none;
+        }
+        .item {
+            width: 220px;
+        }
+       
+    }
+
+    @media only screen and (max-width: 480px) {
+        .header-sidebar {
+            display: none;
+        }
+
+        .main {
+            width: 100%;
+        }
+
+        .spotify a:nth-child(3) {
+            display: none;
+        }
+
+        .item{
+            width:220px;
+        }
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+            .social-links div i {
+                font-size: 150%;
+                padding: 0;
+            }
+
+        .footer-section {
+            padding: 10px;
+        }
+
+            .footer-section .footer .social-links div {
+                margin-right: 0;
+            }
+
+            .footer-section .footer .footer-links .footer-column {
+                margin-left: 10px;
+                margin-right: 0;
+            }
+
+                .footer-section .footer .footer-links .footer-column div {
+                    font-size: 170%;
+                    font-weight: 600;
+                }
+
+                .footer-section .footer .footer-links .footer-column ul li {
+                    margin-bottom: 10px;
+                }
+
+                    .footer-section .footer .footer-links .footer-column ul li a {
+                        font-size: 140%;
+                    }
+
+        .copyright {
+            font-size: 170%;
+            padding: 0;
+            margin-left: -50px;
+            margin: 30px;
+        }
+
+        .preview h4 {
+            font-size: 100%;
+        }
+
+        .preview p {
+            font-size: 150%;
+        }
+
+        .last-btn {
+            display: none;
+        }
+        /*Trang music*/
+        .music-box .play-song img {
+            margin-right:-20px;
+        }
+        .play-song h5 {
+            display: none;
+        }
+        .play-song p {
+            display: none;
+        }
+        .seek-bar{
+            width:230px;
+        }
+        .current-time{
+            left:0px;
+            top:-20px;
+        }
+        .music-time{
+            right:-0px;
+            top:-20px;
+        }
+        .music-volumn span{
+            left:-20px;
+        }
+        .music-volumn .volumn {
+            width: 75px;
+        }
+        /*Trang tìm kiếm*/
+        #search-box{
+            margin-left:-160px;
+        }
+        .search_music {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        /*Trang profile*/
+        .playlist-song li p{
+            display:none;
+        }
+        .avatar{
+            width:300px;
+            height:210px;
+        }
+        .Music-play .content h2 {
+            font-size: 500%;
+        }
+        .Music-play .content p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .content .user_box {
+            top: 302px;
+            left: 45px;
+            width: 415px;
+            height: 300px;
+        }
+        /*Login*/
+        .login form{
+            padding:50px 45px;
+
+        }
+        
+    }
